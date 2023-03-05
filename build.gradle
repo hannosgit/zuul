@@ -17,6 +17,10 @@ idea {
     }
 }
 
+task wrapper(type: Wrapper){
+    gradleVersion = '3.1'
+}
+
 configurations.all {
     // Exclude old asm 3.x versions.
     exclude group: 'asm', module: 'asm'

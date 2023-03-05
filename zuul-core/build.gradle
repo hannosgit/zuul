@@ -14,6 +14,10 @@ dependencies {
     compile 'com.netflix.netflix-commons:netflix-commons-util:0.1.1'
 }
 
+task wrapper(type: Wrapper){
+    gradleVersion = '3.1'
+}
+
 
 javadoc {
     options {

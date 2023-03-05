@@ -18,6 +18,10 @@ dependencies {
     provided 'junit:junit-dep:4.10'
 }
 
+task wrapper(type: Wrapper){
+    gradleVersion = '3.1'
+}
+
 jar {
     from sourceSets.main.allGroovy
 }
